@@ -1,0 +1,12 @@
+
+/*
+ * GET home page.
+ */
+
+exports.index = function(req, res){
+//	var contentHtml= res.partial('content.ejs', {title: '’†g'});
+  res.render('index', {
+	  title:'fugafuga'
+//	  content: res.render(content, {title: '’†g'})
+  });
+};
