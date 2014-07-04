@@ -57,7 +57,7 @@ var Timelimit = new Schema({
 var Task = new Schema({
 	ball: TaskBall,
     parent_task: Task, 
-    finished_flag: {type:boolean, default : false}
+    finished_flag: {type:Boolean, default : false}
 });
 
 var TaskBall = new Schema({
