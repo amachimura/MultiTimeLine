@@ -48,27 +48,6 @@ var UserSchema = new Schema({
   message: String,
   date: Date
 });
-
-var Timelimit = new Schema({
-	timelimit: Date,
-    including_taskball : [TaskBall]
-});
-
-var Task = new Schema({
-	ball: TaskBall,
-    parent_task: Task, 
-    finished_flag: {type:boolean, default : false}
-});
-
-var TaskBall = new Schema({
-      represented_char : String,
-      created_date:{type:Date, default: Date.now},
-      finished_date: Date
-});
-
-
-
-
 mongoose.model('User', UserSchema);
 mongoose.connect('mongodb://localhost/timeline_app');
 var User = mongoose.model('User');
