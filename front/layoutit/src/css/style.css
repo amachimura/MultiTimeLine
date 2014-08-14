@@ -1,0 +1,26 @@
+.container {
+    margin-top: 70px;
+}
+table.table {
+    /* border-style: inset; */
+    /* padding: 10px; */
+    border-bottom-style: ridge;
+}
+.col-md-4.column {
+    border-style: outset;
+}
+tr.onehour td {
+    vertical-align: bottom!important;
+    min-height: 60px;
+    height: 40px;
+    padding-bottom: 2px!important;
+    padding-right: 16px!important;
+    border-right-style: groove;
+    /* border-bottom-style: double; */
+}
+tr.onehour {
+    min-height: 60px;
+    /* height: 60px; */
+    vertical-align: bottom;
+}
+tbody {}
